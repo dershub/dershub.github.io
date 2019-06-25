@@ -17,11 +17,11 @@
             <p>Bilgileri doldurduktan sonra göndermeniz yeterli fırsat buldukça gelen başvuruları projeye ekleceğiz.
                 Projeye eklendiğiniz bilgisi mail olarak tarafınıza iletilecektir.</p>
         </div>
-        <form id="projeKayit">
+        <form id="projeKayit" method="POST">
             <div class="form-group">
                 <label for="userName">Github kullanıcı adınız</label>
                 <input type="text" class="form-control" id="userName" aria-describedby="userNameHelp"
-                    placeholder="Kullanıcı adı">
+                    placeholder="kullaniciadi" required>
                 <small id="userNameHelp" class="form-text text-muted">Projeye eklemek için kullanıcı adınız
                     yeterli</small>
             </div>
@@ -38,10 +38,13 @@
                     <option value="tum">tum_dershub</option>
                 </select>
             </div>
-
             <button type="submit" class="btn btn-primary">Gönder</button>
         </form>
     </div>
+
+    <script>
+        const form = $("#projeKayit");
+    </script>
 
 
 
