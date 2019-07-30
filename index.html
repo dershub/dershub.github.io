@@ -58,6 +58,13 @@
         function formuGonder() {
             const form = $("#projeKayit").serialize;
             console.log(form);
+            $.ajax({
+                method: "POST",
+                url: "",
+                data: form,
+                success: function (data) { },
+                error: function (error) { },
+            });
         }
     </script>
 
